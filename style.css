@@ -1,0 +1,346 @@
+@media screen and (min-width: 1200px) {
+    #map, #aggregate {
+      float: left;
+      margin-left: 5%;
+      width: 55%;
+      text-align: center;
+      display: block;
+    }
+    #info, #aggInfo {
+      float: right;
+      width: 30%;
+      margin-right: 5%;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #info, #aggInfo {
+      /*text-align: center;*/
+      float: center;
+      margin-left: 30%;
+      /*margin-right: 25%;*/
+      margin-top: 30px;
+      display: block;
+    }
+    #map, #aggregate {
+      float: center;
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: block;
+      /*width: 55%;*/
+    }
+}
+
+body, html {
+	margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* inspiration from http://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page */
+#content {
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#content p {
+  color: rgb(45,58,71);
+}
+
+/*colummn inspiration from http://www.w3schools.com/css/css3_multiple_columns.asp*/
+#text p {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  margin: 5%;
+  margin-bottom: 20px;
+  text-align: justify;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+}
+
+#nav {
+	/*padding: 1%;*/
+	/*box-shadow: 0px -4px 4px -2px gray;*/
+	margin-bottom: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+  display: inline-block;
+
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;  
+  font-size: 60px;
+  text-align: right;
+  color: rgb(45,58,71);
+  margin-right: 10px;
+}
+
+#states {
+  fill: rgb(197,195,198);
+}
+
+#states .active {
+  fill: rgb(176,220,79);
+}
+
+#state-borders {
+  fill: none;
+  stroke: rgb(220,220,221);
+  stroke-width: 0.1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+#info {
+  padding-left: 10px;
+}
+#infotext {
+	padding-left: 15px;
+  /*margin-right: 15px;*/
+  background-color: rgb(220,220,221);
+  border: 2px solid rgb(197,195,198);
+  border-radius: 10px;
+  width: 365px;
+  height:520px;
+  color: rgb(70,73,76);
+}
+
+#infotext h3 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+#location, #collegeName {
+	font-size: 0.8em;
+  text-align: center;
+}
+
+#projectTitle {
+	float: right;
+}
+
+.dropbtn {
+    background-color: rgb(220,220,221);
+    border: 2px solid rgb(197,195,198);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    /*position: relative;*/
+    text-decoration: none;
+    color: rgb(70,73,76);
+    /*margin-left: 5%;*/
+    width: 60%;
+    /*text-align: center;*/
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(197,195,198);
+    display: block;
+}
+
+.dropdown-content {
+    margin-left: 1.5%;
+    display: none;
+    /*position: absolute;*/
+    /*display: block;*/
+    background-color: rgb(220,220,221);
+    width: 60%;
+    box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: rgb(70,73,76);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /*position: relative;*/
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(197,195,198);
+  display: block;
+}
+
+.show {display:block;}
+
+#aggregate {
+    display: inline-block;
+}
+
+#aggInfo {
+    display: inline-block;
+}
+
+
+#myDropdown,
+#compareDropdown {
+	max-height: 200px;
+	overflow: scroll;
+}
+
+path {
+  stroke: #fff;
+}
+
+#footer {
+  margin-top: 60px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(45,58,71);
+  color: rgb(220,220,221);
+  padding-bottom: 10px;
+  font-weight: 100;
+}
+
+#footer h2 {
+  color: rgb(197,195,198);
+  font-weight: 100;
+}
+#footer h3 {
+  color: rgb(176,220,79);
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+
+#footer h4 {
+  font-weight: 100;
+}
+
+#chartTitle, #chartValue {
+  font-size: 0.8em;
+}
+
+#chart {
+  /*text-align: center;*/
+  float: center;
+}
+
+#radiobuttons {
+  padding-bottom: 5px;
+  color: rgb(45,58,71);
+  text-align: center;
+  display:  inline-block;
+}
+
+#comparison {
+  margin: 5%;
+  padding-top: 20px;
+  width:90%;
+  float: left;
+  display: block;
+  clear: both;
+}
+
+.average {
+  fill: rgb(70, 90, 109);
+  stroke: black;
+  stroke-width: 0.55px;
+  opacity: 0.9 !important;
+}
+
+.average:hover {
+  fill: rgb(99, 128, 156);
+  stroke: black;
+  stroke-width: 0.55px;
+}
+
+.bar {
+  fill: rgb(176, 220, 79);
+  stroke: black;
+  stroke-width: 0.55px;
+  opacity: 0.6 !important;
+}
+
+.bar:hover {
+  fill: rgb(197, 230, 127);
+  stroke: black;
+  stroke-width: 0.55px;
+}
+
+
+.axis path{
+  shape-rendering: crispEdges;
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.axis line {
+  stroke: black;
+}
+
+.tooltip {
+  background-color: rgb(220,220,221);
+  padding: 5px;
+  border: 1px solid rgb(220,220,221);
+  border-radius: 5px;
+  font-size: 0.8em;
+  white-space: pre-wrap;
+}
+
+.smallRadius:hover {
+  r: 2.6px;
+}
+
+.largeRadius:hover {
+  r: 6px;
+}
+
+#correlationPlot {
+  display: inline-block;
+  text-align: center;
+  /*margin-left: 5%;*/
+}
+
+#comparisonCharts {
+  text-align: center;
+  display: inline-block;
+  /*margin-left: -5%;*/
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  /*
+  for width= 750 and height = 600,
+  top: 260, left: 305, width: 140
+  i want width = 350, height = 350
+  350 (desired width) - 150 (css width) - 100 (css left) = 100 (css left)
+  */
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  width: 150px;
+  text-align: center;
+  color: #666;
+  z-index: 10;
+}
+
+#percentage {
+  font-size: 1.8em;
+}
